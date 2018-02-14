@@ -1,15 +1,21 @@
+
+
 body{
   margin: 0;
   padding: 0;
 }
 
+.clearBoth{
+  clear: both;
+}
 /************ HEADER *******/
 
 header{
-  background-image: url(../images/background_img_header.png);
+  background-image: url('../images/background_img_header.jpg');
   margin: 0px auto;
-  width: 100%;
-  height: 800px;;
+  background-size: cover;
+  height: 100%;
+
 
 }
 
@@ -141,46 +147,98 @@ height: 35px;
 
 main{
   width:1000px;
-  height: 1000px;
+  height: 1900px;
   margin: auto;
   position: relative;
   background-color: #F8F6F7;
   padding-top: 20px;
 }
 
-main p{
+/***************** TOP HEADER ****************/
+
+.top{
+  height: 700px;
+}
+main .top h2{
   font-size: 25px;
-  margin-right: px;
+  position: absolute;
+  top: 100px;
+  right: 20%;
+
+}
+main .line_1{
+  height: 2px;
+  width:200px;
+  background-color:#A38879;
+  position: absolute;
+  top: 155px;
+  right: 0;
 }
 
-main img{
-  width: 400px;
-  height: 250px;
+main .top img{
+  width: 25%;
+  height: auto;
   z-index: 2;
-  margin-left: 60px;
-  margin-top: 50px;
+  position: absolute;
+  top: 200px;
+  left: 150px;
 }
 
-main div{
-  width: 410px;
-  height: 310px;
-  background-color: white;
+.background_poem{
+  width: 430px;
+  height: 360px;
+  background-color: #DE8496;
   opacity:0.7;
   position: absolute;
-  top: 270px;
-  left: 250px;
+  top: 354px;
+  left: 300px;
   z-index: 4;
 }
-main .poem{
-  font-size: 16px;
-  width: 410px;
-  padding: 20px;
+
+main .top .poem {
+  font-size: 18px;
+  width: 400px;
+  padding: 20px 0 0 20px;
   position: absolute;
-  top:254px;
-  left: 250px;
+  top:329px;
+  left: 300px;
   z-index: 5;
+  color: white;
 }
 
+main .poem a{
+  text-decoration: none;
+  border: 1px solid white;
+  color: white;
+  border-radius: 10px;
+  padding: 5px 10px;
+  float: right;
+  margin-top: 15px;
+  display: none;
+  text-transform: uppercase;
+  font-size: 16px;
+
+}
+
+main .poem:hover a{
+  display: inline-block;
+
+}
+
+main .poem a:hover{
+  text-decoration: none;
+  background-color: white;
+  color: #DE8496;
+  border-radius: 10px;
+  padding: 5px 10px;
+  float: right;
+  margin-top: 15px;
+  display: inline-block;
+  text-transform: uppercase;
+  font-size: 16px;
+
+
+}
 main .main_photo{
   width: 500px;
   height: 400px;
@@ -188,4 +246,150 @@ main .main_photo{
   right: 0;
   top:10px;
   z-index: 6;
+}
+ /******************** END OF TOP HEADER *********/
+/*************** BEST SELLER*************/
+.second_main{
+  position: relative;
+}
+
+.second_main h2{
+  font-size: 25px;
+  position: absolute;
+  top: 10px;
+  right: 40%;
+}
+
+.line_2{
+  height: 2px;
+  width:400px;
+  background-color:#A38879;
+  position: absolute;
+  top: 65px;
+  right: 0;
+}
+
+.second_main div + div{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+
+.second_main img{
+  width: 280px;
+  height: 230px;
+  margin: 100px 15px 0px 15px;
+}
+/************** END OF BEST SELLER *********/
+/***************INDISPENSABLE***********/
+.third_main{
+  position: relative;
+}
+
+.third_main div + div{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+
+.third_main img{
+  width: 280px;
+  height: 230px;
+  margin: 100px 15px 0px 15px;
+}
+
+.line_3{
+  height: 2px;
+  width:600px;
+  background-color:#A38879;
+  position: absolute;
+  top: 65px;
+  right: 0;
+}
+
+.third_main h2{
+  font-size: 25px;
+  position: absolute;
+  top: 10px;
+  right: 60%;
+}
+/*********** END OF INDISPENSABLE *****/
+/********** PROMOTIONS ************/
+.last_main{
+  position: relative;
+  margin-top: 70px;
+}
+
+
+.last_main div + div{
+  position: relative;
+  margin-left: 100px;
+}
+
+
+
+.last_main img{
+  width: 200px;
+  height: 150px;
+  margin-top: 100px;
+
+}
+
+.last_main .promo_1{
+  z-index: 8;
+  position: absolute;
+  left: 0px;
+  opacity: 1;
+
+}
+.last_main .promo_2{
+  z-index: 7;
+  position: absolute;
+  left: 100px;
+  opacity: 0.95;
+}
+.last_main .promo_3{
+  z-index: 6;
+  position: absolute;
+  left:200px;
+  opacity: 0.9;
+}
+.last_main .promo_4{
+  z-index: 5;
+  position: absolute;
+  left:300px;
+  opacity: 0.85;
+}
+.last_main .promo_5{
+  z-index: 4;
+  position: absolute;
+  left:400px;
+  opacity: 0.8;
+}
+.last_main .promo_6{
+  z-index: 3;
+  position: absolute;
+  left:500px;
+  opacity: 0.8;
+}
+.last_main .promo_7{
+  z-index: 2;
+  position: absolute;
+  left:600px;
+  opacity: 0.8;
+}
+.line_4{
+  height: 2px;
+  width:800px;
+  background-color:#A38879;
+  position: absolute;
+  top: 65px;
+  right: 0;
+}
+
+.last_main h2{
+  font-size: 25px;
+  position: absolute;
+  top: 10px;
+  right: 80%;
 }
