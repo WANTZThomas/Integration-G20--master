@@ -4,93 +4,75 @@
     <meta charset="utf-8"/>
     <title>Modèle de page</title>
     <meta name="description" content="Description de ma page"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/style.css"/>
   </head>
   <header>
-    <div>
-      <div class="slider">
-        <div class="images"><img src="images/carrousel_1.png" alt=""/> </div>
-        <div class="images"><img src="images/essai2.png" alt=""/> </div>
-        <div class="images"><img src="images/essai1.png" alt=""/> </div>
-        <div class="images"><img src="images/essai2.png" alt=""/> </div>
-        <div class="images"><img src="images/essai1.png" alt=""/> </div>
-        <div class="images"><img src="images/essai2.png" alt=""/> </div>
-        <div class="leftButton"><img src="images/carroussel_fleche_gauche.png" alt=""/></div>
-        <div class="rightButton"><img src="images/carroussel_fleche_droite.png" alt=""/></div>
-      </div>
-      <div class="nav">
-        <li><a href="#" title="Homepage"><img src="images/logotype.png" alt="logotype" /></a></li>
-        <img src="images/logotype_color.png" alt="logotype_color" />
-          <nav>
-            <ul>
-              <li><a href="#" title="discover"> Découvrir </a>
-                <ul>
-                  <li><a href="#" title="brand"> La marque </a>
-                  <li><a href="#" title="forum"> Le forum </a>
-                </ul>
-              </li>
-              <li><a href="#" title="Indispensable"> Incontournables </a>
-                <ul>
-                  <li><a href="#" title="rabbit"> Toudoux Lapinou </a>
-                  <li><a href="#" title="stuffed music"> Les musicaux </a>
-                  <li><a href="#" title="nipple clip"> Attache-tétine </a>
-                  <li><a href="#" title="sleeping bag"> Gigoteuse </a>
-                  <li><a href="#" title="table napkin"> Serviette de table </a>
-                  <li><a href="#" title="changing mat"> tapis à langer </a>
-                </ul>
-              </li>
-              <li><a href="#" title="accessories"> Accessoires </a>
-                <ul>
-                  <li><a href="#" title="health card cover "> Protège carnet de santé </a>
-                  <li><a href="#" title="hair accessories"> Accesoires pour cheveux </a>
-                  <li><a href="#" title="neck cover"> Cache-cou </a>
-                  <li><a href="#" title="key ring"> Porte-clé </a>
-                  <li><a href="#" title="birth box"> Coffret naissance </a>
-                </ul>
-              </li>
-              <li><a href="#" title="Customize"> Personnaliser </a>
-                <ul>
-                  <li><a href="#" title="first name fabrics"> Prénom en tissus </a>
-                  <li><a href="#" title="first name cushion"> Coussin prénom </a>
-                  <li><a href="#" title="reservation"> Réservation </a>
-                </ul>
-              </li>
-              <li><a href="#" title="Promotions"> Promotions </a></li>
-            </ul>
-            <div id="searchbar">
-              <form action="" class="formulaire">
-                <input type="text" name="barre" id="barre" value= "recherche..." />
-              </form>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="hamburger col">
+          <img src="images/menu.png" alt="Hamburger menu">
+        </div>
+        <div class="navbar">
+          <div class="navbarContent row">
+            <div class="logo col">
+              <img src="images/logo.png" alt="logo">
             </div>
-          </nav>
+            <div class="account_search_purchase col">
+              <img src="images/shop.png" alt="Cart icon">
+              <img src="images/man.png" alt="Account icon">
+            </div>
+          </div>
         </div>
       </div>
+      <div class="menu">
+          <nav>
+            <ul>
+              <li><a href="#" title="discover">Découvrir</a>
+                <ul>
+                  <li><a href="#" title="brand">La marque</a></li>
+                  <li><a href="#" title="forum">Le forum</a></li>
+                </ul>
+              </li>
+              <li><a href="#" title="Indispensable">Incontournables</a>
+                <ul>
+                  <li><a href="#" title="rabbit">Toudoux Lapinou</a></li>
+                  <li><a href="#" title="stuffed music">Les musicaux</a></li>
+                  <li><a href="#" title="nipple clip">Attache-tétine</a></li>
+                  <li><a href="#" title="sleeping bag">Gigoteuse</a></li>
+                  <li><a href="#" title="table napkin">Serviette de table</a></li>
+                  <li><a href="#" title="changing mat">Tapis à langer</a></li>
+                </ul>
+              </li>
+              <li><a href="#" title="accessories">Accessoires</a>
+                <ul>
+                  <li><a href="#" title="health card cover">Protège carnet de santé</a></li>
+                  <li><a href="#" title="hair accessories">Accesoires pour cheveux</a></li>
+                  <li><a href="#" title="neck cover">Cache-cou</a></li>
+                  <li><a href="#" title="key ring">Porte-clé</a></li>
+                  <li><a href="#" title="birth box">Coffret naissance</a></li>
+                </ul>
+              </li>
+              <li><a href="#" title="Customize">Personnaliser</a>
+                <ul>
+                  <li><a href="#" title="first name fabrics">Prénom en tissus</a></li>
+                  <li><a href="#" title="first name cushion">Coussin prénom</a></li>
+                  <li><a href="#" title="reservation">Réservation</a></li>
+                </ul>
+              </li>
+              <li><a href="#" title="Promotions">Promotions</a></li>
+            </ul>
+          </nav>
+      </div>
+    </div>
   </header>
   <body>
-    <main>
-      <p>Notre histoire<p>
-      <img src="images/photo_tale.jpg" alt="little boy"/>
-      <div></div>
-      <p class="poem">
-        Notre philosophie, <br />
-        c’est d’abord l’envie,<br />
-        d’offrir à toutes celles qui ont donner la vie,<br />
-        un monde remplie de féerie.<br />
-        <br/>
-        La créatrice de Douce de Po,<br />
-        styliste et modéliste enfant,<br />
-        amoureuse d’accessoire attrayant,<br />
-        voue une vraie passion pour le beau.<br />
-        <br/>
-        Depuis le choix du tissus pour un vêtement de qualité,<br />
-        les produits Douce de Po sont longuement travaillés,<br />
-        adaptés au monde de l’enfance et fabriqués en France,<br />
-        chaque collection se veut unique et tendance.<br />
-      </p>
-      <img src="images/main_photo.png" alt="tree" class="main_photo"/>
-    </main>
     <script type="text/javascript" src="scripts/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
   </body>
   <footer>
   </footer>
