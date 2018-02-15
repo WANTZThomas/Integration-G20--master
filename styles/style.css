@@ -202,8 +202,10 @@ main{
 }
 .firstArticle{
   position: relative;
+  width: 768px;
   top: 150px;
   left: 50px;
+  margin-right: 0;
 }
 .firstArticle img{
   height: 500px;
@@ -217,12 +219,15 @@ main{
   position: relative;
   bottom: 400px;
   left: 150px;
+  margin-right: 0;
 }
 .firstArticle p{
   position: relative;
   bottom: 1000px;
   left: 180px;
+  width: 600px;
   color: white;
+  margin-right: 0;
   font-size: 18pt;
   font-family: Arial, sans-serif;
 }
@@ -389,4 +394,195 @@ footer{
     width: 50px;
     margin: 10px;
     padding-top: 10px;
+}
+
+
+
+/*IPAD*/
+@media screen and (max-width:1024px) {
+  /****************** CAROUSSEL *************/
+  .slider{
+    margin:50px auto 0 auto;
+    width: 100%;
+    height: 460px;
+    overflow: hidden;
+    position: relative;
+  }
+  .images{
+    width: 100%;
+    height: 100%;
+    transition: all 0.9s;
+  }
+  .images:hover{
+    opacity: 0.6;
+  }
+  .images img{
+    height: 100%;
+  }
+  .leftButton{
+    position: absolute;
+    left:0px;
+    top: 45%;
+    z-index: 190;
+  }
+  .rightButton{
+    position: absolute;
+    right: 0;
+    top: 45%;
+  }
+  /*************************************/
+  .navbar_slider{
+    width: 100%;
+    background: white;
+    margin: 0 auto;
+    height: 50px;
+  }
+  .navbar_slider ul li img{
+    height: 50px;
+  }
+  .navbar_slider ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+  }
+  .navbar_slider ul li:not(:first-child){
+    display: flex;
+    align-items: center;
+  }
+  .navbar_slider ul li a{
+    color: #DE8496;
+    text-decoration: none;
+  }
+  .squareProduct div{
+    display: block;
+  }
+  .menu{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    background: #DE8496;
+    z-index: 200;
+    transition: all 0.9s;
+  }
+  .menu_is_active{
+    left: 0;
+  }
+  nav{
+    width: 75%;
+    height: 100%;
+    position: absolute;
+    left: 5%;
+  }
+  nav ul{
+    width: 100%;
+    height: 100%;
+    margin: auto 0;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    font-size: inherit;
+    font-family: inherit;
+    background-color:  inherit;
+  }
+  nav ul li{
+    list-style: none;
+    margin: 5% 0;
+  }
+  nav ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 32pt;
+    font-weight: bold;
+    display: block;
+    width: auto;
+  }
+  nav ul li a:hover{
+    color: #FFFFFF;
+  }
+  nav ul li:hover ul{
+    display: block;
+    position: absolute;
+    left: 25%;
+    top: 10%;
+  }
+  nav ul li ul a{
+    color: lightgrey;
+  }
+  nav ul li ul{
+    display: none;
+    margin-left: 30%;
+  }
+}
+@media screen and (max-width:768px){
+  nav ul li:hover ul{
+    display: block;
+    position: absolute;
+    left: 25%;
+    top: 25%;
+  }
+  .slider{
+    margin:50px auto 0 auto;
+    width: 100%;
+    height: 100%px;
+    overflow: hidden;
+    position: relative;
+  }
+  .images{
+    width: 100%;
+    height: 100%;
+    transition: all 0.9s;
+  }
+  .images:hover{
+    opacity: 0.6;
+  }
+  .images img{
+    height: 100%;
+  }
+  #top{
+    margin: 0px auto;
+    width: 1024px;
+    height: 100%;
+    position: absolute;
+  }
+  #top .nav{
+    position: relative;
+    width: 100%;
+    margin: 0 auto
+  }
+}
+@media screen and (max-width:667px){
+  nav ul li{
+    list-style: none;
+    margin: 15% 0;
+  }
+  nav ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 32pt;
+    font-weight: bold;
+    display: block;
+    width: auto;
+  }
+  nav ul li a:hover{
+    color: #FFFFFF;
+  }
+  nav ul li:hover ul{
+    display: block;
+    position: absolute;
+    left: 25%;
+    top: 15%;
+  }
+  .squareProduct img{
+    height: 300px;
+    width: 300px;
+  }
+  .squareProduct{
+    height: 300px;
+    width: 300px;
+  }
 }
