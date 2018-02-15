@@ -1,4 +1,5 @@
 
+@import url('page.css');
 
 body{
   margin: 0;
@@ -10,8 +11,8 @@ body{
 }
 /************ HEADER *******/
 
-header{
-  background-image: url('../images/background_img_header.jpg');
+.header{
+  background-image: url('../images/background_img_header.png');
   margin: 0px auto;
   background-size: cover;
   height: 100%;
@@ -147,7 +148,7 @@ height: 35px;
 
 main{
   width:1000px;
-  height: 1900px;
+
   margin: auto;
   position: relative;
   background-color: #F8F6F7;

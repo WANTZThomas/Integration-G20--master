@@ -1,0 +1,105 @@
+.img_top_main{
+  width: 1000px;
+  margin: auto;
+}
+
+ main > nav{
+  position: relative;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-top: 50px;
+}
+
+.line{
+    height: 2px;
+    width:490px;
+    background-color:#A38879;
+    position: absolute;
+    top: 65px;
+    right: 0;
+}
+
+main nav a, .h1, .h2, .h4{
+  color:#A38879;
+}
+
+main nav a:hover{
+  color:#DE8496;
+}
+
+.h1{
+  margin-left: 20px;
+  margin-top: 15px;
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
+.h2{
+  margin-top: 30px;
+  margin-left: 20px;
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+.nav-item{
+  margin-left: 60px;
+}
+
+.nav-link, .nav-item{
+  padding: 2px;
+  width: 200px;
+}
+
+.h4{
+  margin-left: 0px;
+  font-size: 20px;
+  margin-bottom: 3px;
+  color: #DE8496;
+}
+
+.space{
+  margin-top: 30px;
+  color:#A38879;
+}
+
+.pagination{
+  margin-top: 100px;
+  margin-right: 7%;
+}
+
+.page-link{
+  color: #DE8496;
+  padding: 10px 20px;
+}
+/***************IMAGE**************/
+.d-flex{
+  position: absolute;
+  top: 35%;
+  right: 35%;
+}
+
+.column_2{
+  position: absolute;
+  top: 35%;
+  right: 7%;
+}
+
+.d-flex ,.flex-column a img{
+  width: 230px;
+  height: 230px;
+  margin-bottom: 30px;
+}
+
+.d-flex a{
+  position: relative;
+}
+
+.d-flex a p{
+  position: absolute;
+  top: 170px;
+  left: 5px;
+  text-align: center;
+  background-color: #FFFFFF;
+  color: #A38879;
+  width: 220px;
+}
