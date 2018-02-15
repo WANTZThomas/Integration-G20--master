@@ -5,129 +5,199 @@
     <title>Modèle de page</title>
     <meta name="description" content="Description de ma page"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
   </head>
-  <header class="header">
-    <div>
-      <div class="slider">
-        <div class="images"><img src="images/carrousel_1.png" alt=""/> </div>
-        <div class="images"><img src="images/essai2.png" alt=""/> </div>
-        <div class="images"><img src="images/essai1.png" alt=""/> </div>
-        <div class="images"><img src="images/essai2.png" alt=""/> </div>
-        <div class="images"><img src="images/essai1.png" alt=""/> </div>
-        <div class="images"><img src="images/essai2.png" alt=""/> </div>
-        <div class="leftButton"><img src="images/carroussel_fleche_gauche.png" alt=""/></div>
-        <div class="rightButton"><img src="images/carroussel_fleche_droite.png" alt=""/></div>
+  <header>
+    <div class="header">
+      <div class="hamburger">
+        <img src="images/menu.png" alt="Hamburger menu">
       </div>
-      <div class="nav">
-        <li><a href="#" title="Homepage"><img src="images/logotype.png" alt="logotype" /></a></li>
-        <img src="images/logotype_color.png" alt="logotype_color" />
+      <div class="hdrbis hide">
+        <div class="navbar">
+          <div class="navbarContent row">
+            <div class="logo col">
+              <img src="images/logo.png" alt="logo">
+            </div>
+            <div class="account_search_purchase col">
+              <img src="images/shop.png" alt="Cart icon">
+              <img src="images/man.png" alt="Account icon">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu">
           <nav>
             <ul>
-              <li><a href="#" title="discover"> Découvrir </a>
+              <li><a href="#" title="discover">Découvrir</a>
                 <ul>
-                  <li><a href="#" title="brand"> La marque </a>
-                  <li><a href="#" title="forum"> Le forum </a>
+                  <li><a href="#" title="brand">La marque</a></li>
+                  <li><a href="#" title="forum">Le forum</a></li>
                 </ul>
               </li>
-              <li><a href="#" title="Indispensable"> Incontournables </a>
+              <li><a href="#" title="Indispensable">Incontournables</a>
                 <ul>
-                  <li><a href="#" title="rabbit"> Toudoux Lapinou </a>
-                  <li><a href="#" title="stuffed music"> Les musicaux </a>
-                  <li><a href="#" title="nipple clip"> Attache-tétine </a>
-                  <li><a href="#" title="sleeping bag"> Gigoteuse </a>
-                  <li><a href="#" title="table napkin"> Serviette de table </a>
-                  <li><a href="#" title="changing mat"> tapis à langer </a>
+                  <li><a href="#" title="rabbit">Toudoux Lapinou</a></li>
+                  <li><a href="#" title="bavoir">Les bavoirs</a></li>
+                  <li><a href="#" title="stuffed music">Les musicaux</a></li>
+                  <li><a href="#" title="nipple clip">Attache-tétine</a></li>
+                  <li><a href="#" title="sleeping bag">Gigoteuse</a></li>
+                  <li><a href="#" title="table napkin">Serviette de table</a></li>
+                  <li><a href="#" title="changing mat">Tapis à langer</a></li>
                 </ul>
               </li>
-              <li><a href="#" title="accessories"> Accessoires </a>
+              <li><a href="#" title="accessories">Accessoires</a>
                 <ul>
-                  <li><a href="#" title="health card cover "> Protège carnet de santé </a>
-                  <li><a href="#" title="hair accessories"> Accesoires pour cheveux </a>
-                  <li><a href="#" title="neck cover"> Cache-cou </a>
-                  <li><a href="#" title="key ring"> Porte-clé </a>
-                  <li><a href="#" title="birth box"> Coffret naissance </a>
+                  <li><a href="#" title="health card cover">Protège carnet de santé</a></li>
+                  <li><a href="#" title="hair accessories">Accesoires pour cheveux</a></li>
+                  <li><a href="#" title="neck cover">Cache-cou</a></li>
+                  <li><a href="#" title="key ring">Porte-clé</a></li>
+                  <li><a href="#" title="birth box">Coffret naissance</a></li>
                 </ul>
               </li>
-              <li><a href="#" title="Customize"> Personnaliser </a>
+              <li><a href="#" title="Customize">Personnaliser</a>
                 <ul>
-                  <li><a href="#" title="first name fabrics"> Prénom en tissus </a>
-                  <li><a href="#" title="first name cushion"> Coussin prénom </a>
-                  <li><a href="#" title="reservation"> Réservation </a>
+                  <li><a href="#" title="first name fabrics">Prénom en tissus</a></li>
+                  <li><a href="#" title="first name cushion">Coussin prénom</a></li>
+                  <li><a href="#" title="reservation">Réservation</a></li>
                 </ul>
               </li>
-              <li><a href="#" title="Promotions"> Promotions </a></li>
+              <li><a href="#" title="Promotions">Promotions</a></li>
             </ul>
-            <div id="searchbar">
-              <form action="" class="formulaire">
-                <input type="text" name="barre" id="barre" value= "recherche..." />
-              </form>
-            </div>
           </nav>
-        </div>
       </div>
+    </div>
   </header>
   <body>
-    <main>
-      <article class="top">
-        <h2>Notre histoire</h2>
-        <div class="line_1"></div>
-        <img src="images/photo_main.jpg" alt="little boy"/>
-        <div class="background_poem"></div>
-        <p class="poem">
-          Notre philosophie, <br />
-          c’est d’abord l’envie,<br />
-          d’offrir à toutes celles qui ont donner la vie,<br />
-          un monde remplie de féerie.<br />
-          <br/>
-          La créatrice de Douce de Po,<br />
-          styliste et modéliste enfant,<br />
-          amoureuse d’accessoire attrayant,<br />
-          voue une vraie passion pour le beau.<br />
-          <br/>
-          Depuis le choix du tissus pour un vêtement de qualité,<br />
-          les produits Douce de Po sont longuement travaillés,<br />
-          adaptés au monde de l’enfance et fabriqués en France,<br />
-          chaque collection se veut unique et tendance.<br />
-          <a href="#" title="Brand">En savoir plus ...</a>
-        </p>
-      </article>
-      <article class="second_main">
-        <h2>Nos Best-seller</h2>
-        <div class="line_2"></div>
-        <div>
-          <img src="images/photo_main.jpg" alt="little boy"/>
-          <img src="images/photo_main.jpg" alt="little boy"/>
-          <img src="images/photo_main.jpg" alt="little boy"/>
-        </div>
-      </article>
-      <article class="third_main">
-        <h2>Les Indispensables</h2>
-        <div class="line_3"></div>
-        <div>
-          <img class ="col-3-sm" src="images/photo_main.jpg" alt="little boy"/>
-          <img src="images/photo_main.jpg" alt="little boy"/>
-          <img src="images/photo_main.jpg" alt="little boy"/>
-        </div>
-      </article>
-      <article class="last_main">
-        <h2>Nos Promotions</h2>
-        <div class="line_4"></div>
-        <div>
-          <img class="promo_1" src="images/photo_main.jpg" alt="little boy"/>
-          <img class="promo_2" src="images/photo_main.jpg" alt="little boy"/>
-          <img class="promo_3" src="images/photo_main.jpg" alt="little boy"/>
-          <img class="promo_4" src="images/photo_main.jpg" alt="little boy"/>
-          <img class="promo_5" src="images/photo_main.jpg" alt="little boy"/>
-          <img class="promo_6" src="images/photo_main.jpg" alt="little boy"/>
-          <img class="promo_7" src="images/photo_main.jpg" alt="little boy"/>
+    <div id="top">
+      <div class="slider">
+        <div class="images"><img src="images/1.png" alt=""/></div>
+        <div class="images"><img src="images/2.png" alt=""/></div>
+        <div class="images"><img src="images/3.png" alt=""/></div>
+
+        <div class="rightButton"><img src="images/carroussel_fleche_droite.png" alt=""/></div>
+        <div class="leftButton"><img src="images/carroussel_fleche_gauche.png" alt=""/></div>
+      </div>
+      <div class="navbar_slider">
+        <ul>
+          <li><a href="#" title="index"><img src="images/logo.png" alt="logotype"/></a></li>
+          <li><a href="#" title="discover"> Découvrir </a></li>
+          <li><a href="#" title="Indispensable"> Incontournables </a></li>
+          <li><a href="#" title="accessories"> Accessoires </a> </li>
+          <li><a href="#" title="Customize"> Personnaliser </a></li>
+          <li><a href="#" title="Promotions"> Promotions </a></li>
+        </ul>
+      </div>
+      <main>
+        <div class="line_1"><h2 class="history">Notre Histoire</h2></div>
+        <article class="firstArticle">
+          <img  src="images/photo_main.jpg" alt="little boy"/>
+          <div class="poem"></div>
+          <p>
+            Notre philosophie,<br/>
+            C’est d’abord l’envie,<br/>
+            D’offrir à toutes celles qui ont donné la vie,<br/>
+            Un monde rempli de féerie.<br/>
+            <br/>
+            La créatrice de Douce de Po,<br/>
+            Styliste et modéliste pour enfant,<br/>
+            Amoureuse d’accessoires attrayants,<br/>
+            Voue une vraie passion pour le beau.<br/>
+            <br/>
+            Du choix du tissu à leur création,<br/>
+            Les produits Douce de Po sont faits avec passion,<br/>
+            Adaptés au monde de l’enfance et fabriqués en France,<br/>
+            Chaque collection se veut unique et tendance.<br/>
+            <a href="#" title="Brand">En savoir plus ...</a>
+          </p>
+        </article>
+        <div class="line_2"><h2 class="bSeller">Nos Best-Seller</h2></div>
+        <div class="clear">
 
         </div>
-      </article>
-    </main>
+        <div class="prodList">
+          <div class="squareProduct">
+            <img src="images/prod1.jpg" alt="product name">
+            <div class="">
+              <span>Bavoir</span>
+              <a href="#">En savoir plus...</a>
+            </div>
+          </div>
+          <div class="squareProduct">
+            <img src="images/prod2.jpg" alt="product name">
+            <div class="">
+              <span>Coussins nom</span>
+              <a href="#">En savoir plus...</a>
+            </div>
+          </div>
+          <div class="squareProduct">
+            <img src="images/prod3.jpg" alt="product name">
+            <div class="">
+              <span>Attaches tétines</span>
+              <a href="#">En savoir plus...</a>
+            </div>
+          </div>
+        </div>
+        <div class="Indispensable">
+          <div class="line_3"><h2 class="bSeller">Les Indispensables</h2></div>
+          <div class="clear">
+
+          </div>
+          <div class="prodList">
+            <div class="squareProduct">
+              <img src="images/4.jpg" alt="product name">
+              <div class="">
+                <span>Chaussons</span>
+                <a href="#">En savoir plus...</a>
+              </div>
+            </div>
+            <div class="squareProduct">
+              <img src="images/5.jpg" alt="product name">
+              <div class="">
+                <span>Gigoteuse</span>
+                <a href="#">En savoir plus...</a>
+              </div>
+            </div>
+            <div class="squareProduct">
+              <img src="images/6.jpg" alt="product name">
+              <div class="">
+                <span>Couverture livret</span>
+                <a href="#">En savoir plus...</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="forum">
+          <span><a href="#">Le Forum...</a></span>
+        </div>
+      </main>
     <script type="text/javascript" src="scripts/app.js"></script>
   </body>
   <footer>
+    <div class='serviceclient'>
+      <ul>
+         <li>Service client</li>
+         <li>FAQ</li>
+         <li>Livraisons & Retour</li>
+         <li>Nous contacter</li>
+         <li>Mentions légales</li>
+         <li>CVG</li>
+         <li>Paiement sécurisé</li>
+      </ul>
+    </div>
+    <div class='newsletter'>
+       <!-- ça un peu plus gros -->
+       <label for="email">Abonne toi à notre newsletter pour être au courant des dernières nouveautés !</label>
+       <input type="email" name="email" id="email" placeholder="Entrez votre e-mail ici">
+       <input type="submit" value="Go">
+    </div>
+    <div class='social'>
+        <a href='#'><img src="images/001-close-envelope.png" alt="email"/></a>
+        <a href='#'><img src="images/002-instagram-logo.png" alt="instagram"/></a>
+        <a href='#'>  <img src="images/003-twitter-logo-silhouette.png" alt="twitter"/></a>
+        <a href='#'><img src="images/004-facebook-letter-logo.png" alt="facebook"/></a>
+    </div>
   </footer>
 </html>

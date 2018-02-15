@@ -1,7 +1,7 @@
 let blocs = document.getElementsByClassName('images')
 let left = document.querySelector('.leftButton')
 let right = document.querySelector('.rightButton')
-let ext = blocs.length*100-100
+let ext = (blocs.length-1)*100
 let index = 0
 left.addEventListener('click', () => {
   if (index >= 0) {
@@ -31,3 +31,24 @@ right.addEventListener('click', () => {
     }
   }
   })
+//navbar animation
+let page = document.getElementsByTagName('html')[0]
+let header = document.getElementById('top')
+let navbar = document.getElementsByClassName('hdrbis')[0]
+window.addEventListener('scroll', () => {
+    if (page.scrollTop > header.clientHeight - 300) {
+        if (navbar.classList.contains('hide')) {
+            navbar.classList.remove('hide')
+        }
+    } else {
+        if (!navbar.classList.contains('hide')) {
+            navbar.classList.add('hide')
+        }
+    }
+})
+//menu
+let menuButton = document.getElementsByClassName('hamburger')
+let menu = document.getElementsByClassName('menu')
+menuButton[0].addEventListener('click', ()=>{
+  menu[0].classList.toggle('menu_is_active')
+})
