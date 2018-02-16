@@ -1,191 +1,588 @@
 body{
   margin: 0;
   padding: 0;
+  background-color: #F8F6F7;
+  font-family: Arial, sans-serif;
 }
-
-/************ HEADER *******/
-
+/* NAVBAR & MENU */
+header div div.hide{
+  display: none;
+}
+header div div{
+  display: block;
+}
 header{
-  background-image: url(../images/background_img_header.png);
+  margin: 0;
+  padding: 0;
+}
+.header{
+  width: 100%;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    z-index: 50;
+    height: 70px;
+    background: #DE8496;
+    width: 100%;
+}
+.navbarContent {
+    position: relative;
+    height: 100%;
+    transition: all 0.2s;
+    width: 100%
+}
+.hamburger, .hamburger img{
+  z-index: 250;
+  height: 50px;
+  margin: 5px;
+  position: fixed;
+}
+.logo{
+  float: left;
+  margin-left: 65px;
+  margin-top: 10px;
+}
+.account_search_purchase img{
+  float: right;
+  margin: 5px 5px;
+}
+.navbar img{
+  height: 50px;
+  vertical-align: middle;
+}
+.menu{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  background: #DE8496;
+  z-index: 200;
+  transition: all 0.9s;
+}
+.menu_is_active{
+  left: 0;
+}
+nav{
+  width: 75%;
+  height: 100%;
+  position: absolute;
+  left: 25%;
+}
+nav ul{
+  width: 100%;
+  height: 100%;
+  margin: auto 0;
+  display: flex;
+  justify-content:center;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  font-size: inherit;
+  font-family: inherit;
+  background-color:  inherit;
+}
+nav ul li{
+  list-style: none;
+  margin: 1% 0;
+}
+nav ul li a{
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 32pt;
+  font-weight: bold;
+  display: block;
+  width: auto;
+}
+nav ul li a:hover{
+  color: #FFFFFF;
+}
+nav ul li:hover ul{
+  display: block;
+  position: absolute;
+  left: 25%;
+  top: 25%;
+}
+nav ul li ul a{
+  color: lightgrey;
+}
+nav ul li ul{
+  display: none;
+  margin-left: 10%;
+}
+#top{
   margin: 0px auto;
   width: 100%;
-  height: 800px;;
-
+  height: 100%;
+  position: absolute;
 }
-
-header .nav{
+#top .nav{
   position: relative;
   width: 1000px;
-  margin: auto;
-  margin-bottom: 260px;
-
+  margin: 0 auto
 }
+
 /****************** CAROUSSEL *************/
-
-
 .slider{
-  margin: 0px auto;
-  padding: 102px 0 0 0;
-  width: 1000px;
-  height: 500px;
+  margin:100px auto 0 auto;
+  width: 1240px;
+  height: 550px;
   overflow: hidden;
   display: flex;
-  flex-direction: row;
   position: relative;
-
-
-
 }
 .images{
   width: 100%;
   height: 100%;
-  transition: all 0.7s;
-
+  transition: all 0.9s;
+}
+.images:hover{
+  opacity: 0.6;
+}
+.images img{
+  height: 100%;
 }
 .leftButton{
   position: absolute;
-  left: 0;
-  top: 50%;
-
-
+  left:0px;
+  top: 45%;
+  z-index: 190;
 }
 .rightButton{
   position: absolute;
   right: 0;
-  top: 50%;
-
-
+  top: 45%;
 }
-
 /*************************************/
-.nav img{
+.navbar_slider{
+  width: 1240px;
+  background: white;
+  margin: 0 auto;
   height: 50px;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
 }
-
-.nav li a img{
-  width: 250px;
+.navbar_slider ul li img{
   height: 50px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 3;
 }
-
-.nav nav ul{
-  position: absolute;
-  right: 150px;
-  top: 0px;
-  z-index: 3;
+.navbar_slider ul{
+  list-style: none;
   display: flex;
   justify-content: space-around;
-  padding: 0px;
   margin: 0;
 }
-
-.nav nav ul li {
-position: relative;
-width: 110px;
-text-align: center;
-padding-top: 15px;;
-list-style: none;
-height: 35px;
+.navbar_slider ul li:not(:first-child){
+  display: flex;
+  align-items: center;
 }
-
-.nav nav ul li a{
-  text-decoration: none;
-  color: white;
-  text-transform: uppercase;
-  font-size: 11px;
-
-
-}
-
-.nav nav ul li ul{
-  display: none;
-  position: absolute;
-  left:0;
-  top: 100%;
-}
-
-.nav nav ul li ul li a{
-  text-decoration: none;
+.navbar_slider ul li a{
   color: #DE8496;
-  font-size: 11px;
-  text-transform: inherit;
-  opacity: 0.7;
-  margin: 15px auto;
+  text-decoration: none;
 }
-
-
-.nav div form input{
-  background-color: #DE8496;
-  color: white;
-  position: absolute;
-  text-transform: uppercase;
-  right: 10px;
-  top:15px;
-  z-index: 3;
-  width: 130px;
-  border-radius: 10px;
-  text-align: center;
-  border: 1px solid white;
-}
-
-
-/********************* BODY ********************/
-
+/********Main***********/
 main{
-  width:1000px;
-  height: 1000px;
-  margin: auto;
+  width: 1000px;
+  margin: 0 auto;
   position: relative;
-  background-color: #F8F6F7;
-  padding-top: 20px;
+  top: 10%;
+  background: white;
+  height: 2000px;
+}
+.line_1{
+  width: 40%;
+  border-bottom: 3px solid black;
+  float: right;
+  position: relative;
+  top: 70px;
+}
+.history{
+  font-family: 'Pacifico';
+  float: left;
+  font-size: 30pt;
+  line-height: 0px;
+}
+.firstArticle{
+  position: relative;
+  width: 768px;
+  top: 150px;
+  left: 50px;
+  margin-right: 0;
+}
+.firstArticle img{
+  height: 500px;
+  opacity: 0.7;
+}
+.poem{
+  background: #DE8496;
+  opacity: 0.5;
+  height: 600px;
+  width: 650px;
+  position: relative;
+  bottom: 400px;
+  left: 150px;
+  margin-right: 0;
+}
+.firstArticle p{
+  position: relative;
+  bottom: 1000px;
+  left: 180px;
+  width: 600px;
+  color: white;
+  margin-right: 0;
+  font-size: 18pt;
+  font-family: Arial, sans-serif;
+}
+.firstArticle p a{
+  color: white;
+  text-decoration: none;
+  position: relative;
+  top: 100px;
+  left: 300px;
+}
+.firstArticle p a:hover{
+  text-decoration: underline;
+}
+.line_2{
+  position: relative;
+  bottom: 650px;
+  float: right;
+  width: 60%;
+  border-bottom: 3px solid black;
+}
+.bSeller{
+  font-family: 'Pacifico';
+  float: left;
+  font-size: 30pt;
+  line-height: 0px;
+}
+.clear{
+  clear: both;
+}
+.squareProduct img{
+  height: 200px;
+  width: 200px;
+}
+.squareProduct{
+  height: 200px;
+  width: 200px;
+}
+.squareProduct:hover{
+  opacity: 0.5;
+}
+.squareProduct:hover div{
+  display: block;
+}
+.prodList{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  bottom: 550px;
+}
+.squareProduct div{
+  display: none;
+  position: relative;
+  bottom: 50px;
+  height: 46px;
+  background: black;
+}
+.squareProduct span{
+  display: block;
+  color: white;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.squareProduct a{
+  display: block;
+  color: white;
+  float: right;
+}
+.Indispensable{
+  position: relative;
+  top: 200px;
+}
+.line_3{
+  position: relative;
+  bottom: 650px;
+  float: right;
+  width: 90%;
+  border-bottom: 3px solid black;
+}
+.forum{
+  position: relative;
+  bottom: 200px;
+  margin: 0 auto;
+  width: 165px;
+}
+.forum span{
+  font-size: 24pt;
+  text-align: center;
+}
+.forum span a{
+  color: black;
+  text-decoration: none;
+}
+.forum span a:hover{
+  color: black;
+  text-decoration: underline;
+}
+/*FOOTER*/
+footer{
+    width: 100%;
+    height: 200px;
+    background-color:  white;
+    position: relative;
+    top: 300px;
+    margin: 0;
+}
+.serviceclient{
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    float: left;
+}
+.newsletter{
+    text-align: center;
+}
+.serviceclient ul{
+    margin-top: 8px;
+    font-size: 16px;
+    list-style: none;
+    font-family: 'Raleway', sans-serif;
+}
+.serviceclient li:first-child{
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.serviceclient li:first-child:hover {
+    color: pink;
+    opacity: 0.5
+}
+.serviceclient li:hover{
+    font-weight: bold;
+    color: pink;
+}
+.newsletter{
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 20px;
+}
+.newsletter label{
+    font-family: 'Raleway', sans-serif;
+}
+.newsletter input{
+    border: 1px solid grey;
+    border-radius: 15px;
+    width: 230px;
+    height: 18px;
+    display: block;
+    margin: 0 auto;
+}
+.newsletter input[type="submit"]{
+    padding-bottom: 20px;
+    width: 50px;
+}
+.social{
+    width: 180px;
+    height: 200px;
+    float: right;
+    position: relative;
+    bottom: 70px;
+}
+.social img{
+    width: 50px;
+    margin: 10px;
+    padding-top: 10px;
 }
 
-main p{
-  font-size: 25px;
-  margin-right: px;
-}
 
-main img{
-  width: 400px;
-  height: 250px;
-  z-index: 2;
-  margin-left: 60px;
-  margin-top: 50px;
-}
 
-main div{
-  width: 410px;
-  height: 310px;
-  background-color: white;
-  opacity:0.7;
-  position: absolute;
-  top: 270px;
-  left: 250px;
-  z-index: 4;
+/*IPAD*/
+@media screen and (max-width:1024px) {
+  /****************** CAROUSSEL *************/
+  .slider{
+    margin:50px auto 0 auto;
+    width: 100%;
+    height: 460px;
+    overflow: hidden;
+    position: relative;
+  }
+  .images{
+    width: 100%;
+    height: 100%;
+    transition: all 0.9s;
+  }
+  .images:hover{
+    opacity: 0.6;
+  }
+  .images img{
+    height: 100%;
+  }
+  .leftButton{
+    position: absolute;
+    left:0px;
+    top: 45%;
+    z-index: 190;
+  }
+  .rightButton{
+    position: absolute;
+    right: 0;
+    top: 45%;
+  }
+  /*************************************/
+  .navbar_slider{
+    width: 100%;
+    background: white;
+    margin: 0 auto;
+    height: 50px;
+  }
+  .navbar_slider ul li img{
+    height: 50px;
+  }
+  .navbar_slider ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+  }
+  .navbar_slider ul li:not(:first-child){
+    display: flex;
+    align-items: center;
+  }
+  .navbar_slider ul li a{
+    color: #DE8496;
+    text-decoration: none;
+  }
+  .squareProduct div{
+    display: block;
+  }
+  .menu{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    background: #DE8496;
+    z-index: 200;
+    transition: all 0.9s;
+  }
+  .menu_is_active{
+    left: 0;
+  }
+  nav{
+    width: 75%;
+    height: 100%;
+    position: absolute;
+    left: 5%;
+  }
+  nav ul{
+    width: 100%;
+    height: 100%;
+    margin: auto 0;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    font-size: inherit;
+    font-family: inherit;
+    background-color:  inherit;
+  }
+  nav ul li{
+    list-style: none;
+    margin: 5% 0;
+  }
+  nav ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 32pt;
+    font-weight: bold;
+    display: block;
+    width: auto;
+  }
+  nav ul li a:hover{
+    color: #FFFFFF;
+  }
+  nav ul li:hover ul{
+    display: block;
+    position: absolute;
+    left: 25%;
+    top: 10%;
+  }
+  nav ul li ul a{
+    color: lightgrey;
+  }
+  nav ul li ul{
+    display: none;
+    margin-left: 30%;
+  }
 }
-main .poem{
-  font-size: 16px;
-  width: 410px;
-  padding: 20px;
-  position: absolute;
-  top:254px;
-  left: 250px;
-  z-index: 5;
+@media screen and (max-width:768px){
+  nav ul li:hover ul{
+    display: block;
+    position: absolute;
+    left: 25%;
+    top: 25%;
+  }
+  .slider{
+    margin:50px auto 0 auto;
+    width: 100%;
+    height: 100%px;
+    overflow: hidden;
+    position: relative;
+  }
+  .images{
+    width: 100%;
+    height: 100%;
+    transition: all 0.9s;
+  }
+  .images:hover{
+    opacity: 0.6;
+  }
+  .images img{
+    height: 100%;
+  }
+  #top{
+    margin: 0px auto;
+    width: 1024px;
+    height: 100%;
+    position: absolute;
+  }
+  #top .nav{
+    position: relative;
+    width: 100%;
+    margin: 0 auto
+  }
 }
-
-main .main_photo{
-  width: 500px;
-  height: 400px;
-  position: absolute;
-  right: 0;
-  top:10px;
-  z-index: 6;
+@media screen and (max-width:667px){
+  nav ul li{
+    list-style: none;
+    margin: 15% 0;
+  }
+  nav ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 32pt;
+    font-weight: bold;
+    display: block;
+    width: auto;
+  }
+  nav ul li a:hover{
+    color: #FFFFFF;
+  }
+  nav ul li:hover ul{
+    display: block;
+    position: absolute;
+    left: 25%;
+    top: 15%;
+  }
+  .squareProduct img{
+    height: 300px;
+    width: 300px;
+  }
+  .squareProduct{
+    height: 300px;
+    width: 300px;
+  }
 }

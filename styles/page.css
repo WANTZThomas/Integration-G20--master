@@ -1,0 +1,165 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    z-index: 50;
+    height: 70px;
+    background: #DE8496;
+    width: 100%;
+}
+.navbarContent {
+    position: relative;
+    height: 100%;
+    transition: all 0.2s;
+    width: 100%
+}
+.hamburger, .hamburger img{
+  z-index: 150;
+  height: 50px;
+  margin: 5px;
+}
+
+.img_top_main{
+  width: 1000px;
+  margin: auto;
+  display: block;
+}
+
+
+ main nav{
+  position: relative;
+  border-radius: 50px;
+  margin: 50px auto 0 auto;
+  box-shadow: 8px 8px 10px #aaa;
+  border-top: 0.5px solid black;
+  width: 90.1%;
+}
+
+.line{
+    height: 2px;
+    width:82%;
+    background-color:#A38879;
+    position: absolute;
+    top: 70px;
+    right: 0;
+}
+
+main nav a, .h1, .h2, .h4{
+  color:#A38879;
+}
+
+main nav a:hover{
+  color:#DE8496;
+}
+
+
+.h1{
+  margin-left: 20px;
+  margin-top: 15px;
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+.h2{
+  margin-top: 30px;
+  margin-left: 20px;
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+
+.nav-link, .nav-item{
+  padding: 2px;
+  width: 45%;
+  margin: 0;
+}
+
+.nav-item{
+  margin-left: 60px;
+  width: 50%;
+}
+
+.h4{
+  margin-left: 0px;
+  font-size: 20px;
+  margin-bottom: 3px;
+  color:#A38879;
+}
+
+.active{
+  color: #DE8496;
+  font-size: 20px;
+}
+
+.space{
+  margin-top: 30px;
+  color:#A38879;
+}
+
+.pagination{
+  margin-top: 100px;
+  margin-right: 7%;
+  padding-bottom: 3px;
+}
+
+.page-link{
+  color: #DE8496;
+  padding: 10px 20px;
+}
+/***************IMAGE**************/
+.d-flex{
+  position: absolute;
+  top: 650px;
+  right: 21%;
+}
+
+.column_2{
+  position: absolute;
+  top: 650px;
+  right: 3%;
+}
+
+.d-flex ,.flex-column a img{
+  width:38%;
+  height: auto;
+  margin-bottom: 30px;
+
+}
+
+.d-flex div{
+  position: relative;
+
+}
+
+.d-flex div a{
+    color: #A38879;
+    text-decoration: none;
+
+}
+
+.d-flex div a:hover {
+    color: #DE8496;
+}
+
+.d-flex div p{
+  position: absolute;
+  top: 42%;
+  left: 5px;
+  text-align: center;
+  background-color: #FFFFFF;
+  width: 37%;
+  padding-top:5px;
+  padding-bottom:40px;
+  display: none;
+}
+
+.d-flex div:hover p{
+  display: block;
+}
+
+.d-flex div .link{
+  top:73%;
+  border: 1px solid #A38879;
+  width: 28%;
+  margin-left: 30px;
+  border-radius: 20px;
+  padding: 1%;
+}
